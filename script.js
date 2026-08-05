@@ -1,6 +1,6 @@
 // ======================================
 
-// SONIKA B P PORTFOLIO
+
 
 // script.js
 
@@ -887,36 +887,6 @@ scrollBtn.addEventListener(
 
  
 
-// ===============================
-
-// FOOTER YEAR
-
-// ===============================
-
- 
-
-const footerText =
-
-document.querySelector("footer p");
-
- 
-
-if (footerText) {
-
- 
-
-    footerText.innerHTML =
-
- 
-
-    `© ${new Date().getFullYear()}
-
-    Sonika B P | Data Analyst Portfolio`;
-
- 
-
-}
-
  
 
 // ===============================
@@ -928,9 +898,7 @@ if (footerText) {
  
 
 console.log(
-
-    "%cWelcome to Sonika B P Portfolio 🚀",
-
+    "%cWelcome to Akhilesh Desai Portfolio 🚀",
     "color:#38bdf8;font-size:16px;font-weight:bold;"
-
 );
+
