@@ -3797,13 +3797,29 @@ footer p:last-child{
     }
 
 
-    .hero-image img {
+@media (max-width: 768px) {
 
-        width: 250px;
-
-        height: 250px;
-
+    .hero-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
     }
+
+    .hero-image img {
+        width: 280px;
+        height: 280px;
+        min-width: 280px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+        display: block;
+    }
+
+}
+
+
+
 
 
     .hero-content h1 {
@@ -4325,3 +4341,134 @@ footer p,
     min-height: 0 !important;
 }
 
+/* =========================================
+   FINAL MOBILE HERO IMAGE FIX
+========================================= */
+
+@media (max-width: 480px) {
+
+    .hero-image {
+        width: 100%;
+        flex: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .hero-image-wrapper {
+        width: 250px !important;
+        height: 250px !important;
+        min-width: 250px !important;
+        min-height: 250px !important;
+        max-width: 250px !important;
+        max-height: 250px !important;
+
+        padding: 7px !important;
+
+        border-radius: 50% !important;
+
+        flex-shrink: 0;
+
+        overflow: hidden;
+    }
+
+    .hero-image-wrapper img {
+        width: 100% !important;
+        height: 100% !important;
+
+        min-width: 0 !important;
+        min-height: 0 !important;
+
+        max-width: none !important;
+        max-height: none !important;
+
+        aspect-ratio: 1 / 1 !important;
+
+        object-fit: cover !important;
+        object-position: center !important;
+
+        border-radius: 50% !important;
+
+        display: block;
+    }
+
+    /* Floating Data Analytics badge */
+
+    .floating-badge {
+        left: 50% !important;
+        bottom: -15px !important;
+
+        transform: translateX(-50%) !important;
+
+        padding: 8px 12px !important;
+
+        gap: 8px;
+
+        white-space: nowrap;
+
+        width: max-content;
+    }
+
+    .floating-badge strong {
+        font-size: 0.72rem !important;
+    }
+
+    .floating-badge span {
+        display: none !important;
+    }
+
+}
+
+/* =========================================
+   FINAL MOBILE STATS FIX
+========================================= */
+
+@media (max-width: 480px) {
+
+    .stats-container {
+        width: 100%;
+        max-width: 340px;
+        margin: 35px auto 0;
+
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 12px;
+    }
+
+    .stat-card {
+        min-width: 0 !important;
+        width: 100%;
+
+        padding: 16px 10px;
+
+        border-radius: 15px;
+
+        text-align: center;
+    }
+
+    .stat-card h3 {
+        font-size: 1.5rem;
+        line-height: 1.2;
+
+        white-space: nowrap;
+        margin-bottom: 6px;
+    }
+
+    .stat-card p {
+        font-size: 0.72rem;
+        line-height: 1.4;
+
+        white-space: normal;
+    }
+
+    /* Center the third card */
+
+    .stat-card:nth-child(3) {
+        grid-column: 1 / -1;
+        width: 160px;
+        justify-self: center;
+    }
+
+}
