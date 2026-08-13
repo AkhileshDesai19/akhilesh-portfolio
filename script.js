@@ -521,24 +521,16 @@ window.addEventListener("scroll", () => {
  
 
 const revealElements =
-
 document.querySelectorAll(
 
- 
-
     ".about-left," +
-
     ".about-right," +
-
-    ".experience-card," +
-
+    ".experience-content," +
+    ".career-focus-card," +
     ".skill-category," +
-
     ".project-card," +
-
+    ".certification-card," +
     ".contact-card"
-
- 
 
 );
 
@@ -901,4 +893,3 @@ console.log(
     "%cWelcome to Akhilesh Desai Portfolio 🚀",
     "color:#38bdf8;font-size:16px;font-weight:bold;"
 );
-
